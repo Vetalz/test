@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: run 3s infinite linear;
+}
+
+@keyframes run {
+    from {
+        transform: rotate(0deg);
+        background: red;
+    }
+
+    33% {
+        background: orange;
+    }
+
+    66% {
+        background: green;
+    }
+
+    to {
+        transform: rotate(360deg);
+        background: red;
+    }
+}
